@@ -1,4 +1,4 @@
-# Polls
+# Poll-APP
 
 Sistema de votação desenvolvido com base no tutorial do Django.
 
