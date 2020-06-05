@@ -1,3 +1,11 @@
 from django.test import TestCase
+from django.shortcuts import resolve_url as r
 
-# Create your tests here.
+
+class HomeTest(TestCase):
+    def setUp(self) -> None:
+        self.response = self.client.get(r("core:index"))
+
+    def test_get(self):
+        """GET /polls must return status code 200"""
+        self.assertEqual(200, self.response.status_code)
