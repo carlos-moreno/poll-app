@@ -1,6 +1,6 @@
 # Poll-App
-![Django CI](https://github.com/carlos-moreno/poll-app/workflows/Django%20CI/badge.svg)
-[![CodeFactor](https://www.codefactor.io/repository/github/carlos-moreno/poll-app/badge)](https://www.codefactor.io/repository/github/carlos-moreno/poll-app)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1ff25493030d27d507b7/maintainability)](https://codeclimate.com/github/carlos-moreno/poll-app/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1ff25493030d27d507b7/test_coverage)](https://codeclimate.com/github/carlos-moreno/poll-app/test_coverage)
 
 Sistema de votação desenvolvido com base no tutorial do Django.
 
