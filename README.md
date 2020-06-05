@@ -1,4 +1,5 @@
 # Poll-App
+[![Build Status](https://travis-ci.org/carlos-moreno/poll-app.svg?branch=master)](https://travis-ci.org/carlos-moreno/poll-app)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1ff25493030d27d507b7/maintainability)](https://codeclimate.com/github/carlos-moreno/poll-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1ff25493030d27d507b7/test_coverage)](https://codeclimate.com/github/carlos-moreno/poll-app/test_coverage)
 
