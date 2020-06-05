@@ -1,5 +1,5 @@
 [run]
-source=project
+source=poll
 omit =
     # omit __init__
     *__init__.py*
