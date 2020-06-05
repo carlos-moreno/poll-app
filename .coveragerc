@@ -11,3 +11,5 @@ omit =
     *apps.py*
     # omit wsgi.py
     *wsgi.py*
+    # omit asgi.py
+    *asgi.py*
