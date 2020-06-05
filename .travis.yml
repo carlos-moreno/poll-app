@@ -1,7 +1,7 @@
 dist: xenial
 env:
   global:
-    secure: seeh67cs7njp/dOScd7YK38DyR88SpUb2qyhDKW3xHdQ5e5NiXGOhQZv4XN7djOPTeS57x2pkw9/W5ZIDsz4ku6l3S/Xk5eElKtJ3z17oBFu7WFwV8A0NZa/pxeJAeXGgKjnyyivfb9t2BNA32NeZXzVjORVDIWAP54lORPayi02mgXBmev+6vKkFuhtVtrBq9E3RsbXJLfJRQ5XhNlk2Xyvm9Uc+F55cv8pwqL9eP2mSYMKXOX3K6A19asq2nWBUX1a5OOEqGhp3+2e7dJCpbtIuGxerMtXAPebcD3eFgnA0Jh4FivoMeaclsI3f/8Mw3vEBtENQZBnEUv2AetedDTYDdGOOkP36XrTXOr0zA3IsElkwuc5e19Wo0UO2p29uxudoxJ5uM1eEaBtMeVxx6syB+0Leus0mhPt8giY35I4nwPmenAgyWL6O7l0lKnVOdGXwp8ND9i9dMaSNeT93hYHhNr5j8x6r2HYD3dPHxDw25htFCspH7V1fFx3H7bHJOM4LRVEQzpmOLqBaLY1fDE0O/J0dX9ml38/vQ9XNLetZTFWETSwbc5SsEhfna1yese+6cBO3f+jmwSr74LrQ62nuyrtPH3p8PbNsBEsQO9JwDefmMcNB2J3SKa1DScvJetojbyuZJzKmIUzeo3Ep8wTc1/Rf3Np34nc7rbsraU=
+    secure: w0v3kTlll9Jizn1S+zoRiDKUeENog9/XouISTSEMg9MI8f9c9ejgWXLw/8iJLrzQT3bzG6B0L13e1lT7WDn699cIYNjQYbOyAKgPXZIE62+qSDZOePuI0acJMrkPZUK/MBAx3N9K5JDjUBgtyvojXj/xJLXVhGqWgZkxB5dEt78Gxb37cU6Go+6uc5zJSK5PM4YeUw9Ya+h/Tnir3nk6KbxWwWvsiqf4EkQiuK7+Cmro0cariUGSnKCj4HbitV8r6wte/xjNiaaxCwPCyzctsAi15+yl0AKJ2YylfkbOm1C31pHqvCFfYt8Xa3Z/eLmlmFGj8KKtL7KJ+3VWvdbGTU4xf9gsf3O/omAoIrpMkiJG/j1lQMfynEC7yVuWOhRSmrWrBqABJ1LvNjtuRm1abo2sFwkn8oL3OmESCrRyI0DeGk3C+N4LYmo5nnsI8FhGC6qYHgQceHCHHE96EneoxJmLT0tex0dZdCT+hIR7Put6/OsDpcSn5NO5vZK0Bg6wb0dEsGgxGwmnZcdYETKev7ydSQ90mfSl2oaYtCKaLZOuM4P58EIYY5PbegGhZ4cveo5/DIh/Cl46Y4HQ2wg0hoAnQdsfIy09qrfZGLzSQXE2MsfZrFBfEL1Rfj96eZfnRXJkMYBsdmuW3pHBu/wc1nKVLYfhYRj5EyO+9ju06Zg=
 language: python
 python:
 - '3.7'
@@ -14,9 +14,9 @@ before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
 - chmod +x ./cc-test-reporter
-- ./cc-test-reporter before-build
+- "./cc-test-reporter before-build"
 script:
 - coverage run manage.py test
 after_script:
 - coverage xml
-- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
