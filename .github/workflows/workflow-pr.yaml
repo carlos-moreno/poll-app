@@ -15,7 +15,6 @@ jobs:
         run: |
           pip install -U pip
           pip install pytest
-          pytest
       - name: Wemake Python Stylguide
         uses: wemake-services/wemake-python-styleguide@0.13.4
         continue-on-error: true
