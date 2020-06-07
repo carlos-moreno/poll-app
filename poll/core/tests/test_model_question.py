@@ -17,5 +17,4 @@ class QuestionTest(TestCase):
         self.assertEqual("What's up?", str(self.question))
 
     def test_was_published_recently(self):
-        was_published_recently = timezone.now() - datetime.timedelta(days=1)
-        self.assertGreaterEqual(self.question.pub_date, was_published_recently)
+        self.assertTrue(self.question.was_published_recently())
