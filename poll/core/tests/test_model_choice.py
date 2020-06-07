@@ -7,13 +7,10 @@ from poll.core.models import Question, Choice
 class ChoiceTest(TestCase):
     def setUp(self) -> None:
         self.question = Question.objects.create(
-            question_text="What's up?",
-            pub_date=timezone.now()
+            question_text="What's up?", pub_date=timezone.now()
         )
         self.choice = Choice.objects.create(
-            question=self.question,
-            choice_text="Just hacking again.",
-            votes=0
+            question=self.question, choice_text="Just hacking again.", votes=0
         )
 
     def test_str(self):
