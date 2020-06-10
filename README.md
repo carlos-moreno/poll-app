@@ -2,6 +2,9 @@
 [![Build Status](https://travis-ci.org/carlos-moreno/poll-app.svg?branch=master)](https://travis-ci.org/carlos-moreno/poll-app)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5022e5360597bb0762ae/maintainability)](https://codeclimate.com/github/carlos-moreno/poll-app/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/5022e5360597bb0762ae/test_coverage)](https://codeclimate.com/github/carlos-moreno/poll-app/test_coverage)
+[![Updates](https://pyup.io/repos/github/carlos-moreno/poll-app/shield.svg)](https://pyup.io/repos/github/carlos-moreno/poll-app/)
+[![Python 3](https://pyup.io/repos/github/carlos-moreno/poll-app/python-3-shield.svg)](https://pyup.io/repos/github/carlos-moreno/poll-app/)
+
 
 Sistema de votação desenvolvido com base no tutorial do Django.
 
