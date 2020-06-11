@@ -6,7 +6,7 @@
 [![Python 3](https://pyup.io/repos/github/carlos-moreno/poll-app/python-3-shield.svg)](https://pyup.io/repos/github/carlos-moreno/poll-app/)
 
 
-Sistema de votação desenvolvido com base no tutorial do Django.
+Sistema de enquetes desenvolvido com base no tutorial do Django.
 
 ![index](imgs/index.png " Index")
 
