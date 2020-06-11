@@ -8,6 +8,11 @@
 
 Sistema de votação desenvolvido com base no tutorial do Django.
 
+![index](imgs/index.png " Index")
+
+![detail](imgs/detail_of_poll.png " Detail of poll")
+
+![result](imgs/result_of_poll.png " Result of poll")
 
 ## Como rodar a aplicação?
 1 - Clone o repositório.
