@@ -10,7 +10,7 @@ from poll.core.models import Question
 
 class HomeTest(TestCase):
     def setUp(self) -> None:
-        self.response = self.client.get(r("core:index"))
+        self.response = self.client.get(r("index"))
 
     def test_get(self):
         """GET /polls must return status code 200"""
@@ -32,7 +32,7 @@ class QuestionIndexViewTests(TestCase):
         """
         If no questions exist, an appropriate message is displayed.
         """
-        response = self.client.get(r('core:index'))
+        response = self.client.get(r('index'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "No polls are available.")
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
@@ -43,7 +43,7 @@ class QuestionIndexViewTests(TestCase):
         index page.
         """
         create_question(question_text="Past question.", days=-30)
-        response = self.client.get(r('core:index'))
+        response = self.client.get(r('index'))
         self.assertQuerysetEqual(
             response.context['latest_question_list'],
             ['<Question: Past question.>']
@@ -55,7 +55,7 @@ class QuestionIndexViewTests(TestCase):
         the index page.
         """
         create_question(question_text="Future question.", days=30)
-        response = self.client.get(r('core:index'))
+        response = self.client.get(r('index'))
         self.assertContains(response, "No polls are available.")
         self.assertQuerysetEqual(response.context['latest_question_list'], [])
 
@@ -66,7 +66,7 @@ class QuestionIndexViewTests(TestCase):
         """
         create_question(question_text="Past question.", days=-30)
         create_question(question_text="Future question.", days=30)
-        response = self.client.get(r('core:index'))
+        response = self.client.get(r('index'))
         self.assertQuerysetEqual(
             response.context['latest_question_list'],
             ['<Question: Past question.>']
@@ -78,7 +78,7 @@ class QuestionIndexViewTests(TestCase):
         """
         create_question(question_text="Past question 1.", days=-30)
         create_question(question_text="Past question 2.", days=-5)
-        response = self.client.get(r('core:index'))
+        response = self.client.get(r('index'))
         self.assertQuerysetEqual(
             response.context['latest_question_list'],
             ['<Question: Past question 2.>', '<Question: Past question 1.>']
