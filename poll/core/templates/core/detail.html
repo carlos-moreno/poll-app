@@ -1,9 +1,11 @@
 {% extends "core/base.html" %}
 
 {% block content %}
-<h1>{{ question.question_text }}</h1>
-
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<div class="jumbotron jumbotron-fluid mt-3">
+    <div class="container">
+        <h1 class="display-4" align="center">{{ question.question_text }}</h1>
+    </div>
+</div>
 
 <form action="{% url 'core:vote' question.id %}" method="post">
     {% csrf_token %}
@@ -11,6 +13,7 @@
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
     {% endfor %}
-    <button type="submit" class="btn btn-primary">Vote</button>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <button type="submit" class="btn btn-primary mt-3">Confirm</button>
 </form>
 {% endblock %}
